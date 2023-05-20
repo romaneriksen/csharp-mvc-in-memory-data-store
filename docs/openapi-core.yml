@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: C# API Exercise - Core Criteria
+  title: Java API Exercise - Core Criteria
   description: |-
   version: 0.2.2
 
