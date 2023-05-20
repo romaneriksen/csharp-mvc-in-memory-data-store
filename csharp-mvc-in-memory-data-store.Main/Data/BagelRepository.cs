@@ -1,24 +1,38 @@
-﻿namespace mvc_in_memory_data_store.Models
+﻿using mvc_in_memory_data_store.Data;
+using System;
+
+namespace mvc_in_memory_data_store.Models
 {
-    public class BagelRepository
+    public class BagelRepository : IBagelRepository
     {
-        private int idCounter = 1;
-        private List<Bagel> data = new List<Bagel>();
+        private static int IdCounter = 1;
+        private static List<Bagel> _bagels = new List<Bagel>();
 
         public void create(String type, int price)
         {
-            Bagel bagel = new Bagel(this.idCounter++, type, price);
-            this.data.Add(bagel);
+            Bagel bagel = new Bagel(BagelRepository.IdCounter++, type, price);
+            BagelRepository._bagels.Add(bagel);
         }
 
         public List<Bagel> findAll()
         {
-            return this.data;
+            return BagelRepository._bagels;
+            
         }
 
         public Bagel find(int id)
         {
-            return this.data.First(bagel => bagel.getId() == id);
+            return BagelRepository._bagels.First(bagel => bagel.getId() == id);
+        }
+
+        public bool Add(Bagel bagel)
+        {
+            if (bagel != null)
+            {
+                _bagels.Add(bagel);
+                return true;
+            }
+            return false;
         }
     }
 }
