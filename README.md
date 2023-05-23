@@ -39,7 +39,7 @@ This approach to designing a system allows us to keep things organised and modul
 	ProductRepository repository class with some CRUD
 	Inject the repository into the ProductsController and write controller CRUD methods
 	
-Use sample API code provided.  [implement this API spec following an MVC approach](https://boolean-uk.github.io/csharp-api-mvc-in-memory/).
+Use sample API code provided.  [implement this API spec following an MVC approach](https://boolean-uk.github.io/csharp-mvc-in-memory-data-store/).
 
 ## Extensions
 
