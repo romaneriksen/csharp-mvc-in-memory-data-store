@@ -42,5 +42,5 @@ This approach to designing a system allows us to keep things organised and modul
 Use sample API code provided.  [implement this API spec following an MVC approach](https://boolean-uk.github.io/csharp-mvc-in-memory-data-store/).
 
 ## Extensions
-[Extensions](./docs/extensions.html)
-[This API spec](https://boolean-uk.github.io/csharp-api-mvc-in-memory/extensions) contains some additions to the core spec, including adding error responses under certain scenarios and allowing clients to optionally filter products by category.
+
+[This API spec](https://boolean-uk.github.io/csharp-api-mvc-in-memory/extensions.html) contains some additions to the core spec, including adding error responses under certain scenarios and allowing clients to optionally filter products by category.
